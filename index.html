@@ -12,8 +12,12 @@
 		</div>
 		<div class="maincontent">
 			<script>
+				/*
 				document.write("Monir");
 				document.write("<br/>");
+				*/
+				
+				/*
 				// Variable
 				var name = "Md. Moniruzzaman Monir";
 				var age = 30;
@@ -26,6 +30,23 @@
 				var multi = a * b;
 				var divide = a / b;
 				document.write("Sum = "+sum+" Multiply = "+multi+" And Divide = "+divide);
+				*/
+				
+				
+				// Function, Global & Local variable
+				document.write("<br/>");
+				var color = "Yellow";
+				var color = "Blue";
+				function function_one(){
+					// var color = "Green";  // Local variable
+					// color = "Red"; // Global variable
+					window.color = "White" // Global variable
+					document.write("Inside function color is : "+color);
+				}
+				
+				function_one();
+				document.write("<br/>");
+				document.write("Outside function color is : "+color);
 			</script>
 		</div>
 		<div class="footer">
